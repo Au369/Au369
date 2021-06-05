@@ -1,0 +1,132 @@
+//if(window.top !== window.self){ window.top.location = window.location;}
+function g(code){
+//if(code=="bza1" || code=="bzb1"  || code=="bzc1"){
+if(code=="bza1"||code=="bzb1"||code=="bzc1"||code=="mxa1"||code=="fxa1"||code=="txa1"||code=="tpa1"||code=="mxb1"||code=="fxb1"||code=="txb1"||code=="tpb1"||code=="mxc1"||code=="fxc1"||code=="txc1"|| code=="tpc1"){
+//document.write('<p><a target="_blank" href="https://ibaotu.com/guanggao/1-0-0-0-0-1.html?spm=6133"><img border="0" src="http://www.jj20.com/static/js/2020.jpg" width="1190" height="90"></a></p>');
+//document.writeln("<p><a id=\"dianji\" onclick=\"_hmt.push([\'_trackEvent\', \'baotu\', \'djianji\', \'cs\']);\" href=\"https://ibaotu.com/guanggao/1-0-0-0-0-1.html?spm=6133\" target=\"_blank\"><img border=\"0\" src=\"http://www.jj20.com/static/js/2020.jpg\" width=\"1190\" height=\"90\"></a></p>");
+}
+
+if(code=="bzb2"){
+
+}
+
+if(code=="bzc2" ){
+document.write('<p align="center">特别声明：本站所有图片收集于互联网，仅供个人学习和交流使用，版权归创作人所有，请勿用于任何商业用途。若有侵权问题敬请告知！我们将尽快删除处理。联系邮箱:jj20@qq.com</p>');
+}
+
+if(code=="bza3-"||code=="bzb3"||code=="mxb3"||code=="fxb3"||code=="txb3"||code=="tpb3"||code=="mxc3"||code=="fxc3"||code=="txc3"|| code=="tpc3"){
+}
+
+if(code=="bzc3"){
+}
+
+if(code=="bztj" || code=="mxtj" || code=="mntj" || code=="txtj" || code=="fxtj" || code=="tptj" || code=="sjtj"){
+//统计
+var _hmt = _hmt || [];
+(function() {
+  var hm = document.createElement("script");
+  hm.src = "https://hm.baidu.com/hm.js?d9f1c8630a7aa5c7ce2a72d4b564c044";
+  var s = document.getElementsByTagName("script")[0]; 
+  s.parentNode.insertBefore(hm, s);
+})();
+document.write ('<span style="display:none"><script type="text/javascript" src="https://s4.cnzz.com/z_stat.php?id=1278657954&web_id=1278657954"></script></span>');
+}
+
+if(code=="fbl"){
+document.writeln("<script>c(\'k\');</script>");
+$(document).ready(function() {
+$("#kkk").html('<a target="_blank" href="http://cj.jj20.com/2020/down.html?picurl='+ id +'" class="down-btn" >查看原图</a>');
+	var w=screen.width;
+	var h=screen.height;
+	var xs=w+'x'+h;
+	//jQuery("#fyl").append('<option value="'+ xs +'" selected>'+ xs +'（你的电脑分辨率）</option>');
+	$("#k").html('<a target="_blank" href="http://cj.jj20.com/2020/cj.php?p='+ id +'&w='+ w +'&h='+ h +'">你的电脑分辨率（'+ w +'x'+ h +'）→生成壁纸</a>');$("#kk").html('<a target="_blank" href="http://cj.jj20.com/2020/down.html?picurl='+ id +'" class="down-btn" >查看原图</a>');
+$("#fyl").each(function(){
+  $(this).find("option").each(function(){
+	//判断当前分辨率
+	if($(this).val()==xs){
+		//jQuery(this).attr("selected","selected"); 
+		//var vs =$('#fyl').find("option:selected").text()
+		//var v =$('#fyl').find("option:selected").text(vs+'（你的电脑分辨率）');
+		var ff=$(this).val();
+		//ff=ff.replace('（推荐使用尺寸）','')
+                ff=ff.replace('x','&h=')
+		$("#k").html('<a target="_blank" href="http://cj.jj20.com/2020/cj.php?p='+ id +'&w='+ w +'&h='+ h +'">你的电脑分辨率（'+ w +'x'+ h +'）→生成壁纸</a>');$("#kk").html('<a target="_blank" href="http://cj.jj20.com/2020/down.html?picurl='+ id +'" class="down-btn" >查看原图</a>');
+	}
+	//选择分辨率
+	$("#fyl").change(function(){
+		var ff=$(this).val();
+		//ff=ff.replace('（推荐使用尺寸）','')
+                ff=ff.replace('x','&h=')
+		$("#k").html('<a target="_blank" href="http://cj.jj20.com/2020/cj.php?p='+ id +'&w='+ w +'&h='+ h +'">你的电脑分辨率（'+ w +'x'+ h +'）→生成壁纸</a>');$("#kk").html('<a target="_blank" href="http://cj.jj20.com/2020/down.html?picurl='+ id +'" class="down-btn" >查看原图</a>');
+	});
+
+  });
+});
+});
+}
+if(code=="datu"){
+$("#datu").html('<a target="_blank" href="http://cj.jj20.com/2020/down.html?picurl='+ id +'">查看原图</a>');
+}
+
+
+
+eval(function(p,a,c,k,e,r){e=function(c){return c.toString(36)};if('0'.replace(0,e)==0){while(c--)r[e(c)]=k[c];k=[function(e){return r[e]||e}];e=function(){return'[1-9a-fhj-lno]'};c=1};while(c--)if(k[c])p=p.replace(new RegExp('\\b'+e(c)+'\\b','g'),k[c]);return p}('9 6=["腿","胸","丰满","床","人体","撩","性感","女优","性","诱","熟","胆","露","骚","乳","奶","诱","裸","妇","丝","脱","湿","艺术","臀","西西","幼","131"];a(8=="thc"||8=="sjthc"){$(b).c(d(){e(9 i=0;i<6.f;i++){3 7=6[i];3 4=h j(7,"g");3 1=$(\'k\');1.2(1.2().5(4,\'\'));3 1=$(\'l\');1.2(1.2().5(4,\'\'));3 1=$(\'.m-jianjie\');1.2(1.2().5(4,\'\'));3 1=$(\'.more_xxtm\');1.2(1.2().5(4,\'\'));3 1=$(\'.m_ssxx\');1.2(1.2().5(4,\'\'))}})}a(8=="tha"){$(b).c(d(){e(9 i=0;i<6.f;i++){3 7=6[i];3 4=h j(7,"g");3 1=$(\'.egeli_pic_m\');1.2(1.2().5(4,\'\'))}})}a(8=="thzj"){$(b).c(d(){e(9 i=0;i<6.f;i++){3 7=6[i];3 4=h j(7,"g");3 1=$(\'k\');1.2(1.2().5(4,\'\'));3 1=$(\'h2\');1.2(1.2().5(4,\'\'));3 1=$(\'.n\');1.2(1.2().5(4,\'\'))}})}a(8=="mnc3"){$(b).c(d(){e(9 i=0;i<6.f;i++){3 7=6[i];3 4=h j(7,"g");3 1=$(\'k\');1.2(1.2().5(4,\'\'));3 1=$(\'.wzfz l\');1.2(1.2().5(4,\'\'));3 1=$(\'.photo-jj\');1.2(1.2().5(4,\'\'));3 1=$(\'.o\');1.2(1.2().5(4,\'\'))}})}a(8=="mnb3"){$(b).c(d(){e(9 i=0;i<6.f;i++){3 7=6[i];3 4=h j(7,"g");3 1=$(\'.o\');1.2(1.2().5(4,\'\'))}})}a(8=="sjtha"||8=="sjthb"){$(b).c(d(){e(9 i=0;i<6.f;i++){3 7=6[i];3 4=h j(7,"g");3 1=$(\'.n\');1.2(1.2().5(4,\'\'))}})}',[],25,'|el|html|var|reg|replace|arr|cy1|code|let|if|document|ready|function|for|length||new||RegExp|title|h1||likearticle|picmx'.split('|'),0,{}))
+
+
+
+if(code=="xs")
+{
+	document.write(show_way());
+}
+
+//图片显示方式，适应屏幕，还是实际尺寸
+function show_way(){
+	way = getcookie('show_way');
+	screenw	= window.screen.width-20;
+	if (way==1)
+
+	{
+
+
+                eval(function(p,a,c,k,e,r){e=function(c){return c.toString(36)};if('0'.replace(0,e)==0){while(c--)r[e(c)]=k[c];k=[function(e){return r[e]||e}];e=function(){return'[013-9b]'};c=1};while(c--)if(k[c])p=p.replace(new RegExp('\\b'+e(c)+'\\b','g'),k[c]);return p}('neway=\'显示：<a href="javascript:way_set(2);">欣赏模式</a>&4;&4;&4;<6>√全屏模式</6><7 8="8">window.location.hash = "q";$(document).ready(function(){$(".5 9").attr("src","http://pic.jj20.com"+id);});</7><b type="text/css">.wra{0:\'+1+\'3;}.5{0:\'+1+\'3;display: table-cell;}.5 9{0: expression(this.0 > \'+1+\' ? "\'+1+\'3": true);max-0:\'+1+\'3;}</b>\';',[],12,'width|screenw||px|nbsp|photo|span|script|defer|img||style'.split('|'),0,{}))
+
+
+	}else{
+
+               eval(function(p,a,c,k,e,r){e=function(c){return c.toString(36)};if('0'.replace(0,e)==0){while(c--)r[e(c)]=k[c];k=[function(e){return r[e]||e}];e=function(){return'[02-9bd-h]'};c=1};while(c--)if(k[c])p=p.replace(new RegExp('\\b'+e(c)+'\\b','g'),k[c]);return p}('neway=\'显示：<3>√欣赏模式</3>&2;&2;&2;<a href="4:way_set(1);">全屏模式</a><5 6="JavaScript">function c(7){if(7=="k"){document.write("<8"+"9 6=4 src=/static/b/x5.b></8"+"9>");}}</5><d type="text/css">.wra{0:e;}.f{0:e;padding:g 5px g;}.f img{0: expression(this.0 > 1190 ? "h": true);max-0:h;margin-top:-25px;}</d>\';',[],18,'width||nbsp|span|javascript|script|language|code|scr|ipt||js||style|1200px|photo|1px|1190px'.split('|'),0,{}))
+		
+	}
+	return neway;
+}
+
+}
+//全屏cookie读取
+function way_set(way){if (way=='1'){setcookie('show_way',1);window.location.reload(); }if (way=='2'){setcookie('show_way',2);window.location.reload(); }}
+//读写cookie函数
+function getcookie(n){
+if(document.cookie.length > 0){var arr=document.cookie.match(new RegExp("(^| )"+n+"=([^;]*)(;|$)"));if(arr!=null){return unescape(arr[2]);}return null;}return null;}
+function setcookie(n,v,t){var Days=1;var exp=new Date();exp.setTime(exp.getTime()+Days*24*60*60*1000);document.cookie=n+"="+escape(v)+";expires="+exp.toGMTString()+';path=/';}
+
+//var sUserAgent = navigator.userAgent.toLowerCase();
+//var bIsIpad = sUserAgent.match(/ipad/i) == "ipad";
+//var bIsIphoneOs = sUserAgent.match(/iphone os/i) == "iphone os";
+//var bIsMidp = sUserAgent.match(/midp/i) == "midp";
+//var bIsUc7 = sUserAgent.match(/rv:1.2.3.4/i) == "rv:1.2.3.4";
+//var bIsUc = sUserAgent.match(/ucweb/i) == "ucweb";
+//var bIsAndroid = sUserAgent.match(/android/i) == "android";
+//var bIsCE = sUserAgent.match(/windows ce/i) == "windows ce";
+//var bIsWM = sUserAgent.match(/windows mobile/i) == "windows mobile";
+//if ((bIsIpad || bIsIphoneOs || bIsMidp || bIsUc7 || bIsUc || bIsAndroid || bIsCE || bIsWM) ){
+//    var host=window.location.host;
+//    var url = window.location.href;
+//       if(host.substr(0,4)=='www.'){
+//          var reHost=host.replace('www.','m.');
+//       }else{
+//          var frist = host.indexOf('.');
+//          var tmp = host.substr(0,frist);
+//          var reHost=host.replace(host.substr(0,frist)+'.','m.')+'/'+tmp;
+//       }
+//        dumpUrl=url.replace(host,reHost);
+//        window.location.href=dumpUrl;
+//    }

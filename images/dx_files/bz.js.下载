@@ -1,0 +1,92 @@
+
+/*! Ê×Ò³ÏÂÃæÍ¼Æ¬ */
+var onloaded=window.onscroll=window.onresize=function(){var imgArr=document.getElementsByTagName("img");var noLoadingArr=noLoadingImg(imgArr);var sTop=document.documentElement.scrollTop||document.body.scrollTop;var iHeight=document.documentElement.clientHeight+sTop+3;var iiTop=iiBottom=0;var m=null;if(noLoadingArr.length){for(var i=0;i<noLoadingArr.length;i++){m=noLoadingArr[i].parentElement;iiTop=getHight(m)-6;iiBottom=iiTop+m.offsetHeight+8;if(((iiTop>sTop&&iiTop<iHeight)||(iiBottom>sTop&&iiBottom<iHeight))&&noLoadingArr[i].getAttribute("loadsrc")!=null&&noLoadingArr[i].getAttribute("shid")!=1){loadingImg(i,noLoadingArr)}}}function loadingImg(j,noLoadingArr){var opts=null,alpha=0;opts=setInterval(function(){noLoadingArr[j].src=noLoadingArr[j].getAttribute("loadsrc");noLoadingArr[j].setAttribute("shid",1);alpha+=6;if(alpha>100){alpha=100}noLoadingArr[j].style.opacity=alpha/100;noLoadingArr[j].style.filter="alpha(opacity="+alpha+")";if(alpha==100){clearInterval(opts)}},13)}function noLoadingImg(noLoadingArr){var noImg=[];for(var i=0;i<noLoadingArr.length;i++){if(noLoadingArr[i].getAttribute("shid")!=1&&noLoadingArr[i].getAttribute("loadsrc")!=null){noImg.push(imgArr[i])}}return noImg}function getHight(e){return e.offsetTop+(e.offsetParent?arguments.callee(e.offsetParent):0)}};onloaded();
+/*! ×óÓÒÒÆ¶¯ */
+jQuery.cookie=function(name,value,options){if(typeof value!="undefined"){options=options||{};if(value===null){value="";options.expires=-1}var expires="";if(options.expires&&(typeof options.expires=="number"||options.expires.toUTCString)){var date;if(typeof options.expires=="number"){date=(new Date((new Date()).getTime()+options.expires*1000+8*3600*1000)).toUTCString()}else{date=options.expires.toUTCString()}expires="; expires="+date}var path="; path=/";var domain=options.domain?"; domain="+(options.domain):"";var secure=options.secure?"; secure":"";document.cookie=[name,"=",encodeURIComponent(value),expires,path,domain,secure].join("")}else{var cookieValue=null;if(document.cookie&&document.cookie!=""){var cookies=document.cookie.split(";");for(var i=0;i<cookies.length;i++){var cookie=jQuery.trim(cookies[i]);if(cookie.substring(0,name.length+1)==(name+"=")){cookieValue=decodeURIComponent(cookie.substring(name.length+1));break}}}return cookieValue}};var current=parseInt($("#nextGroup").attr("stid"));var nextNums=parseInt($("#nextGroup").attr("stid"));var zNums=$("#nextGroup").attr("enid");var zt=true;var zf=true;window.onload=function(){if(nextNums==0){$("#prevGroup").removeClass("forbida").addClass("forbid")}else{$("#prevGroup").removeClass("forbid").addClass("forbida")}if(nextNums==zNums){$("#nextGroup").removeClass("forbida").addClass("forbid")}else{$("#nextGroup").removeClass("forbid").addClass("forbida")}};$("#nextGroup").click(function(){if(nextNums+1<=zNums&&zt){zt=false;var zid=nextNums+2;nextNums++;$("#showImg").animate({left:"-"+nextNums*744+"px"},500,function(){zt=true});$(".show"+zid+" img").each(function(){if(!$(this).attr("src")){$(this).attr("src",$(this).attr("srcs"))}});$("#prevGroup").removeClass("forbid").addClass("forbida");if(nextNums==zNums){$("#nextGroup").removeClass("forbida").addClass("forbid")}}});$("#prevGroup").click(function(){if(nextNums>0&&zf){zf=false;nextNums--;var zid=nextNums+1;var jl=nextNums*744;if(zNums==nextNums){jl=nextNums*parseInt($("#nextGroup").attr("sid"))*146}if(nextNums>current){jl=jl+1}$("#showImg").animate({left:"-"+jl+"px"},500,function(){zf=true});$(".show"+zid+" img").each(function(){$(this).attr("src",$(this).attr("srcs"))});$("#nextGroup").removeClass("forbid").addClass("forbida");if(nextNums==0){$("#prevGroup").removeClass("forbida").addClass("forbid")}}});
+/*! ×óÓÒÒþ²Ø */
+$(".photomx,.photo").focus(function(){$(".arrow-bg").stop(true,true).fadeTo(600,0.2);$(".arrow-ico").stop(true,true).fadeIn(600)});$(".photomx,.photo").hover(function(){$(".arrow-bg").stop(true,true).fadeTo(600,0.2);$(".arrow-ico").stop(true,true).fadeIn(600)},function(){$(".arrow-bg").stop(true,true).fadeTo(800,0);$(".arrow-ico").stop(true,true).fadeOut(800)});$("#prevPic").click(function(){window.location.href=$("a.prev").attr("href")});$("#nextPic").click(function(){window.location.href=$("a.next").attr("href")});
+/*! À¸Ä¿ */
+$(function(){$("#navul > li").not(".navhome").hover(function(){$(this).addClass("navmoon")},function(){$(this).removeClass("navmoon")})}); 
+/*»ÃµÆ*/
+
+  $("#show").hover(function() {
+    $("#xiao").stop(true, true).fadeIn(400)
+},
+function() {
+    $("#xiao").stop(true, true).fadeOut(800)
+});
+var lengthMove = 1190;
+var move = parseInt($(".info .current").attr("sid"));
+var pmove = true;
+var cmove = true;
+var zmove = true;
+var movepic = function movePic() {
+    $("#pic" + move).addClass("current").siblings("li").removeClass("current");
+    var moveLen = move * lengthMove;
+    $("#imgall").animate({
+        left: "-" + moveLen + "px"
+    },
+    600);
+    if (move == 11) {
+        pmove = false
+    }
+    if (move == 0) {
+        pmove = true
+    }
+    if (pmove) {
+        move++
+    } else {
+        move--
+    }
+};
+var ctime = setInterval(movepic, 6000);
+$(".info li").hover(function() {
+    move = parseInt($(this).attr("sid"));
+    if (zmove == true) {
+        clearInterval(ctime);
+        zmove = false
+    }
+    $("#pic" + move).addClass("current").siblings("li").removeClass("current");
+    var moveLen = move * lengthMove;
+    $("#imgall").stop(true, true).animate({
+        left: "-" + moveLen + "px"
+    },
+    600)
+},
+function() {
+    if (zmove == false) {
+        ctime = setInterval(movepic, 6000);
+        zmove = true
+    }
+});
+
+/*Ã÷ÐÇËÑË÷*/
+           var pretime = $('#pretime').html();
+            $('#btnSearch').click(function () {
+                $('#pretime').html(pretime);
+                var searchText = $('#txtKey').val();
+                if (searchText.length == 0) {
+                    alert('ÇëÊäÈëËÑË÷¹Ø¼ü´Ê!');
+                    $('#txtKey').focus();
+                    return false;
+                }
+                var regExp = new RegExp(searchText, 'g');
+                $('#pretime a').each(function () {
+                    var html = $(this).html();
+                    var _time = $(this).parent().find("strong").text();
+                    var newHtml = html.replace(regExp, '<span1 class="highlight">' + searchText + '</span>');
+                   //var newHtml = html.replace(regExp, '<span class="highlight">' + searchText + '</span>');
+                    $(this).html(newHtml);
+                    flag = 1;
+
+                })
+                if (flag) {
+                    if ($(".highlight").size() > 1) {
+                        var _top = $(".highlight").eq(0).offset().top;
+                        $("html,body").animate({
+                            "scrollTop": _top
+                        }, 500)
+                    }
+                }
+            });
+
